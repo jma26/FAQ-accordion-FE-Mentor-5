@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js"defer ></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+  <main>
+    <article class="accordion">
+      <img class="accordion-hero--img mobile" src="./images/illustration-woman-online-mobile.svg" alt="Illustration of woman standing in front of an computer" />
+      <img class="bg-pattern--mobile" src="./images/bg-pattern-mobile.svg" alt="blue square background pattern with a flat purple hover shadow" />
+      <img class="illustration-box" src="./images/illustration-box-desktop.svg" alt="@ symbol 4D box" />
+      <div class="accordion-container">
+        <h1 class="accordion--header">FAQ</h1>
+        <div id="accordion-group">
+          <button
+            aria-expanded="false"
+            class="accordion-trigger"
+            aria-controls="section-1"
+            id="accordionID1"
+          >
+            How many team members can I invite?
+            <span class="accordion--icon">
+              <img src="./images/icon-arrow-down.svg">
+            </span>
+          </button>
+          <div
+            id="section-1"
+            role="region"
+            aria-labelledby="accordionID1"
+            class="accordion-panel"
+          >
+            <p class="accordion--content">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+          </div>
+          <button
+            aria-expanded="false"
+            class="accordion-trigger"
+            aria-controls="section-2"
+            id="accordionID2"
+          >
+            What is the maximum file upload size?
+            <span class="accordion--icon">
+              <img src="./images/icon-arrow-down.svg">
+            </span>
+          </button>
+          <div
+            id="section-2"
+            role="region"
+            aria-labelledby="accordionID2"
+            class="accordion-panel"
+          >
+            <p class="accordion--content">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+          <button
+            aria-expanded="false"
+            class="accordion-trigger"
+            aria-controls="section-3"
+            id="accordionID3"
+          >
+            How do I reset my password?
+            <span class="accordion--icon">
+              <img src="./images/icon-arrow-down.svg">
+            </span>
+          </button>
+          <div
+            id="section-3"
+            role="region"
+            aria-labelledby="accordionID3"
+            class="accordion-panel"
+          >
+            <p class="accordion--content">Click "Forget password" from the login page or "Change password" from your profile page. A reset link will be emailed to you.</p>
+          </div>
+          <button
+            aria-expanded="false"
+            class="accordion-trigger"
+            aria-controls="section-4"
+            id="accordionID4"
+          >
+            Can I cancel my subscription?
+            <span class="accordion--icon">
+              <img src="./images/icon-arrow-down.svg">
+            </span>
+          </button>
+          <div
+            id="section-4"
+            role="region"
+            aria-labelledby="accordionID4"
+            class="accordion-panel"
+          >
+            <p class="accordion--content">Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </div>
+          <button
+            aria-expanded="false"
+            class="accordion-trigger"
+            aria-controls="section-5"
+            id="accordionID5"
+          >
+            Do you provide additional support?
+            <span class="accordion--icon">
+              <img src="./images/icon-arrow-down.svg">
+            </span>
+          </button>
+          <div
+            id="section-5"
+            role="region"
+            aria-labelledby="accordionID5"
+            class="accordion-panel"
+          >
+            <p class="accordion--content">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
